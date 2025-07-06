@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: realtime-editor
+    env: node
+    buildCommand: npm install --legacy-peer-deps
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=4096
+    healthCheckPath: / 
