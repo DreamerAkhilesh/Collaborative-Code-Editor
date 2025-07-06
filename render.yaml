@@ -2,10 +2,10 @@ services:
   - type: web
     name: realtime-editor
     env: node
-    buildCommand: npm install --legacy-peer-deps
-    startCommand: npm start
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: node server.js
     envVars:
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 10000 
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=4096 

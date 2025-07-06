@@ -81,4 +81,8 @@ io.on('connection' , (socket) => {
 })
 
 const PORT = process.env.PORT || 5000;
-server.listen(PORT, () => console.log(`server listening on PORT ${PORT}`));
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running on port ${PORT}`);
+    console.log(`Environment: ${process.env.NODE_ENV}`);
+    console.log(`Build directory exists: ${require('fs').existsSync(path.join(__dirname, 'build'))}`);
+});
