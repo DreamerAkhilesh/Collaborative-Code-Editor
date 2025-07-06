@@ -8,8 +8,6 @@ export const initSocket = async () => {
         transports: ['websocket'],
     };
 
-    // Use the same host for production, or localhost for development
     const backendUrl = process.env.REACT_APP_BACKEND_URL || window.location.origin;
-    console.log('Connecting to:', backendUrl);
     return io(backendUrl, options);
 };
