@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Coditix – Realtime Collaborative Code Editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+**Coditix** is a fullstack real-time collaborative code editor that allows multiple users to join a shared room and edit code together with instant synchronization. Built with modern web technologies, it enables seamless live collaboration, making it ideal for coding interviews, teaching, pair programming, and hackathons.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+👉 [Try Coditix Live](https://collaborative-code-editor-rho.vercel.app/)
 
-### `npm test`
+> ⚙️ Backend hosted on [Render](https://coditix.onrender.com/)  
+> 🌐 Frontend hosted on [Vercel](https://collaborative-code-editor-rho.vercel.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔹 Frontend
+- **React** (with Hooks)
+- **CodeMirror 6** (via `@uiw/react-codemirror`)
+- **React Router v7**
+- **UUID** (for room IDs)
+- **React Hot Toast** (notifications)
+- **Tailwind CSS** (optional for styling)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔸 Backend
+- **Node.js**
+- **Express.js**
+- **Socket.IO** (WebSocket-based communication)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📂 Project Structure
+```
+realtime-editor/
+├── build/ # Production build
+├── node_modules/ # Dependencies
+├── public/ # Static assets (favicon, manifest)
+├── src/
+│ ├── assets/ # Logos and images
+│ ├── components/ # Reusable UI components (Editor, ClientList)
+│ ├── pages/ # React pages (Home, EditorPage)
+│ ├── App.js # App layout and routing
+│ └── index.js # Entry point
+├── server.js # Express + Socket.IO backend
+├── render.yaml # Render deployment config
+├── .gitignore
+├── .nvmrc # Node version config
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ✨ Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 🔄 **Real-time code collaboration** using WebSockets
+- 🔗 **Create or join rooms** with unique Room IDs
+- 👥 **Live user list** with avatars
+- 📋 **Copy/share Room ID** with one click
+- 🔔 **Toast notifications** on user actions
+- ⚡ **Instant code synchronization** across all clients
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧑‍💻 Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. Clone the repository
 
-### Code Splitting
+```bash
+git clone https://github.com/aayushhh07/Collaborative-Code-Editor.git
+cd Collaborative-Code-Editor
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 2. Frontend
+```bash
+cd realtime-editor
+npm install
+```
 
-### Analyzing the Bundle Size
+### 3. Backend
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 4. Run locally 
 
-### Making a Progressive Web App
+Start Backend Server (Port 5000 by default)
+```bash
+node server.js
+```
+Start Frontend Dev Server (Port 5173 by default)
+```bash
+cd Collaborative-Code-Editor
+npm run dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+npm run dev
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
