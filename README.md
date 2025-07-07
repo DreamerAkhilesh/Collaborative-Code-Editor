@@ -105,7 +105,7 @@ npm run dev
 ![Home Page](public/home.png)
 
 ###Live collaborative code editor in action
-![Editor Page](public/collaboration(1).png)
+![Editor Page](public/collaboration (1).png)
 
 ###Active toasts while joining
 ![Editor Page](public/joined.png)
