@@ -1,6 +1,6 @@
 # Coditix – Realtime Collaborative Code Editor
 
-
+![Coditix Banner](src/assets/logo.png)
 
 **Coditix** is a fullstack real-time collaborative code editor that allows multiple users to join a shared room and edit code together with instant synchronization. Built with modern web technologies, it enables seamless live collaboration, making it ideal for coding interviews, teaching, pair programming, and hackathons.
 
@@ -99,7 +99,44 @@ cd Collaborative-Code-Editor
 npm run dev
 ```
 
-npm run dev
+## 📸 Screenshots
+
+###Room joining interface
+![Home Page](public/home.png)
+
+###Live collaborative code editor in action
+![Editor Page](public/collaboration(1).png)
+
+###Active toasts while joining
+![Editor Page](public/joined.png)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+If you'd like to contribute, please follow these steps:
+
+1. **Fork** the repository  
+2. Create a new branch: `git checkout -b feature/YourFeatureName`  
+3. Make your changes and **commit**: `git commit -m 'Add YourFeatureName'`  
+4. **Push** to your forked repo: `git push origin feature/YourFeatureName`  
+5. Open a **Pull Request**
+
+Please make sure your code follows the project's coding conventions and includes relevant tests or examples where applicable.
+
+---
+
+## 👨‍💻 Author
+
+**Aayush Vishwakarma**
+
+- 📍 India    
+- 🔗 [LinkedIn](https://www.linkedin.com/in/aayush-vishwakarma-68a8a92a1)  
+- 💻 [GitHub](https://github.com/Aayushhh07)  
+- 📬 Email: aayushvishwakarma93@gmail.com
+
+
 
 
 
