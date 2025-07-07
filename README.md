@@ -78,7 +78,7 @@ cd Collaborative-Code-Editor
 
 ### 2. Frontend
 ```bash
-cd realtime-editor
+cd Collaborative-Code-Editor
 npm install
 ```
 
@@ -101,13 +101,13 @@ npm run dev
 
 ## 📸 Screenshots
 
-###Room joining interface
+### Room joining interface
 ![Home Page](public/home.png)
 
-###Live collaborative code editor in action
+### Live collaborative code editor in action
 ![Editor Page](public/collab.png)
 
-###Active toasts while joining
+### Active toasts while joining
 ![Editor Page](public/joined.png)
 
 
